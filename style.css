@@ -2,6 +2,7 @@
     font-family: "Poppins";
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -13,77 +14,61 @@ html {
     --hlgrey: #292929;
 }
 
-body {
-    border: 0,1px solid transparent;
-    color: #292929;
+/*=====================NAVBAR=====================*/
+
+.nav-link{
+    font-family: Poppins !important;
+    font-size: 20px;
 }
 
-/*=====================HEADER-BANNER=====================*/
-/*Basicamente solo lo usare como banner*/
-.header {
+.fixed-theme { /*Transicion que use para MyScript*/
+    transition: 1s;
+}
+
+/*=====================FONDO-BANNER=====================*/
+/*Solo lo usare como banner*/
+.portadaFotoDetalle {
     background-image: url(img/lenguaje-de-programación.jpg);
     min-height: 100vh; /*Para que ocupe todo el alto de la pantalla*/
     background-size: cover; /*Para que cubra todo*/
 }
 /*Esto es para oscurecer el background, el :before es para aplicar lo que quiera antes del .header*/
-.header:before {
+.portadaFotoDetalle:before {
 	content:'';
 	position: absolute;
-        top: 0;
+    top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	background-color: rgba(0,0,0,0.6);
 }
 
-.header .myNavBar { /*Transparente, el !importante porq uso bootstrap*/
+.header .myNavBar { /*Navbar transparente, el !importante porq uso bootstrap*/
     background-color: transparent !important;
 }
 
 /*Edit de la foto de portada y detalle en el header*/
 /*Box*/
-.portadaFotoDetalle {
-    width: 500px;
-    position: relative; /*Para usar el top*/
-    top: 35vh;
-    left: 52vh;
-    text-align: justify;
+
+.mainBanner {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 /*Texto del header*/
 .portadaFotoDetalle span{
-    display: block;
     color:#a1a1a1;
     font-size: 25px;
     font-family: Poppins;
-    text-align: justify;
     line-height: 25px;
-    position: relative;
-    top: 70px;
-    left: 30px;
 }
 /*Foto*/
 .fotoPortada {
+    margin-bottom: 15px;
     border-radius: 100%;
-}
-
-/*Efecto maquina de escribir*/
-
-.descripcionBanner{
-    white-space: nowrap;
-    border-right: 1px solid;
-    width: 17.6ch;
-    
-    animation: typing 2s steps(20), blink .5s infinite step-end alternate;
-    overflow: hidden;
-}
-
-@keyframes typing {
-    from {width: 0}
-}
-
-@keyframes blink {
-    50% { border-color: transparent }
 }
 
 /*=====================OTROS-APARTADOS=====================*/
@@ -136,23 +121,6 @@ h2 {
     margin-top: 120px;
 }
 
-/*=====================NAVBAR=====================*/
-
-.navbar {
-    position: fixed !important;
-    top: 0;
-    width: 100%;
-}
-
-.nav-link{
-    font-family: Poppins !important;
-    font-size: 20px;
-}
-
-.fixed-theme { /*Transicion que use para MyScript*/
-    transition: 1s;
-}
-
 /*=====================MEDIA-QUERIES=====================*/
 /*Celus muy pequenios*/
 @media (max-width: 575.98px){
@@ -162,10 +130,6 @@ h2 {
 
     #tools {
         margin-top: 50px !important;
-    }
-
-    .portadaFotoDetalle {
-        left: -1vh;
     }
 }
 
@@ -178,19 +142,12 @@ h2 {
         margin-top: 50px !important;
     }
 
-    .portadaFotoDetalle {
-        left: 10vh;
-    }
 }
 
 /*Tablets*/
 @media (min-width: 768px) and (max-width: 991px) {
     #Sobre-Mi {
         margin-left: -10px;
-    }
-
-    .portadaFotoDetalle {
-        left: 5vh;
     }
 }
 
