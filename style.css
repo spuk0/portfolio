@@ -72,7 +72,7 @@ body {
 .descripcionBanner{
     white-space: nowrap;
     border-right: 1px solid;
-    width: 19.5ch;
+    width: 17.6ch;
     
     animation: typing 2s steps(20), blink .5s infinite step-end alternate;
     overflow: hidden;
@@ -109,8 +109,8 @@ h2 {
 }
 
 .textoSobreMi {
-    line-height: 35px;
-    text-align: left;
+    line-height: 30px;
+    text-align: justify;
 }
 
 .contenedor { /*Uso display grid para armar una grilla con mis skills*/
