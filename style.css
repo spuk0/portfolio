@@ -40,12 +40,14 @@ html {
 	bottom: 0;
 	left: 0;
 	right: 0;
+    min-height: 100vh;
 	background-color: rgba(0,0,0,0.6);
 }
 
 .header .myNavBar { /*Navbar transparente, el !importante porq uso bootstrap*/
     background-color: transparent !important;
 }
+
 
 /*Edit de la foto de portada y detalle en el header*/
 /*Box*/
@@ -67,18 +69,22 @@ html {
 }
 /*Foto*/
 .fotoPortada {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border-radius: 100%;
 }
 
-/*=====================OTROS-APARTADOS=====================*/
+/*=====================SOBRE-MI=====================*/
+
 #Sobre-Mi {
-    width: 100%;
-    max-width: 1000px;
-    margin-top: 120px;
-    margin-bottom: 250px;
-    margin-left: 150px;
+    margin-top: 10vh;
 }
+
+.textoSobreMi {
+    line-height: 30px;
+    text-align: justify;
+}
+
+/*=====================OTROS=====================*/
 
 #Proyectos {
     margin-bottom: 120px;
@@ -93,26 +99,6 @@ h2 {
     margin-bottom: 70px;
 }
 
-.textoSobreMi {
-    line-height: 30px;
-    text-align: justify;
-}
-
-.contenedor { /*Uso display grid para armar una grilla con mis skills*/
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat (4, auto);
-}
-
-.contenedor h3 { 
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
-
-.contenedor .herramienta {
-    text-align: center;
-}
 
 /*Derechos de autor y etc*/
 .subfooter {
@@ -124,35 +110,46 @@ h2 {
 /*=====================MEDIA-QUERIES=====================*/
 /*Celus muy pequenios*/
 @media (max-width: 575.98px){
-    #Sobre-Mi {
-        margin-left: -10px;
-    }
-
-    #tools {
-        margin-top: 50px !important;
+    .fotoPortada {
+        width: 34vh;
+        height: 34vh;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        border-radius: 100%;
     }
 }
 
 /*Celus pequenios*/
 @media (min-width: 576px) and (max-width: 767px){
-    #Sobre-Mi {
-        margin-left: -10px;
-    }
-    #tools {
-        margin-top: 50px !important;
+    .fotoPortada {
+        width: 65vh;
+        height: 65vh;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        border-radius: 100%;
     }
 
 }
 
 /*Tablets*/
 @media (min-width: 768px) and (max-width: 991px) {
-    #Sobre-Mi {
-        margin-left: -10px;
+    .fotoPortada {
+        width: 40vh;
+        height: 40vh;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        border-radius: 100%;
     }
 }
 
 /*Celus pc*/
 @media (min-width: 992px){
-    
+    .fotoPortada {
+        width: 40vh;
+        height: 40vh;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        border-radius: 100%;
+    }
 }
 

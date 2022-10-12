@@ -1,117 +1,132 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
+<head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
         <link href="style.css" rel="stylesheet" type="text/css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
         <title>jabfry: Portfolio</title>
-    </head>
+</head>
 
-    <body>
-        
-        <header class="header">
-            <!--Mi barra de navegacion-->
-            <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top myNavBar" id="MyNavBar">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <span>
-                        <img src="img/AP-logo.png" width="40" height="30" alt="Logo de argentina programa" align="left" style="margin-right: 10px;">
-                        <p style="font-family: Poppins; font-size: 20px;">Argentina Programa - #YoProgramo.</p>
-                    </span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-                data-bs-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+<body>
+
+<!--=====================HEADER=====================-->
+<header class="header">
+    <!--=====================BARRA DE NAVEGACION=====================-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top myNavBar" id="MyNavBar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <span>
+                    <img src="img/AP-logo.png" width="40" height="30" alt="Logo de argentina programa" align="left" style="margin-right: 10px;">
+                    <p style="font-family: Poppins; font-size: 20px;">AP - #YoProgramo.</p>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active"><a class="nav-link" href="#">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#Sobre-Mi">Sobre mi</a></li>
                     <li class="nav-item"><a class="nav-link" href="#Proyectos">Proyectos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
                 </ul>
-                </div>
             </div>
-            </nav>
+        </div>
+    </nav>
 
-            <!--Main banner, foto y desc-->
-            <div id="portada" class="portadaFotoDetalle container-fluid bgimage">
-                <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mainBanner">
-                    <img class="fotoPortada" src="img/Yo2.jpg" alt="Foto de perfil" width="330" height="330">
+    <!--=====================BANNER, FOTO Y DESCRIPCION=====================-->
+    <div id="portada" class="portadaFotoDetalle container-fluid bgimage">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mainBanner">
+                <div class="bloque-portadaYDescripcion">
+                    <img class="fotoPortada" src="img/Yo2.jpg" alt="Foto de perfil">
                     <span>
                         <p>Javier Antonio Frias</p>
                         <p>Full-Stack Developer</p>
                     </span>
                 </div>
-                </div>
-            </div> 
-        </header>
-
-        <div class="container-fluid bg-3 text-center">
-        <div id="Sobre-Mi">
-                <h2>Sobre mi</h2>
-                <div class="row">
-                <div id="im" class="col-sm-4">
-                    <span class="textoSobreMi">
-                        <h3>Programador web y futuro licenciado en sistemas.</h3>
-                        <p>Me especializo en el area del front-end, diariamente me esfuerzo en expandir mis conocimientos para lograr ser full-stack.</p>
-                        <p>Me encanta trabajar en equipo, y al cursar materias de programacion en la universidad descubri 
-                            una nueva pasion que disfruto de aprender.
-                        </p>
-                        <button type="button" class="btn btn-primary btn-lg boton">Descargar CV</button>
-                    </span>
-                </div>
-                <div class="col-sm-4">
-
-                </div>
-                <div id="tools" class="col-sm-4">
-                    <div class="contenedor herramientas">
-                        <h3>Mis herramientas: </h3>
-                        <div class="herramienta">
-                            <img src="img/html-logo.png" width=100 height=100 alt="logo html">
-                            <div class="skillname">
-                                <p>HTML</p>
-                            </div>
-                        </div>
-                        <div class="herramienta">
-                            <img src="img/css-logo.png" width=100 height=100 alt="logo css">
-                            <div class="skillname">
-                                <p>CSS</p>
-                            </div>
-                        </div>
-                        <div class="herramienta">
-                            <img src="img/bootstrap-logo.png" width=100 height=100 alt="logo bootstrap">
-                            <div class="skillname">
-                                <p>BOOTSTRAP</p>
-                            </div>
-                        </div>
-                        <div class="herramienta">
-                            <img src="img/git-logo.png" width=100 height=100 alt="logo git">
-                            <div class="skillname">
-                                <p>GIT</p>
-                            </div>
-                        </div>
-                        <div class="herramienta">
-                            <img src="img/github-logo.png" width=100 height=100 alt="logo github">
-                            <div class="skillname">
-                                <p>GITHUB</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
             </div>
         </div>
-            <div id="Proyectos" class="row text-center">
-                <h2>Proyectos: </h2>
-                
+    </div> 
+</header>
+
+<!--=====================CONTAINER PRINCIPAL=====================-->
+<div class="container-fluid text-center">
+
+
+    <!--=====================SOBRE-MI=====================-->
+    <div class="container">
+
+        <div id="Sobre-Mi" class="row">
+
+            <h2>Sobre mi</h2>
+            <!--=====================TEXTO=====================-->
+            <div id="im" class="col">
+                <span class="textoSobreMi">
+                    <h3>Programador web y futuro licenciado en sistemas.</h3>
+                    <span>
+                        <p>Me especializo en el area del front-end, diariamente me esfuerzo en expandir mis conocimientos para lograr ser full-stack.</p>
+                        <p>Me encanta trabajar en equipo, y al cursar materias de programacion en la universidad descubri 
+                        una nueva pasion que disfruto de aprender.</p>
+                        <button type="button" class="btn btn-primary btn-lg boton">Descargar CV</button>
+                    </span>
+                </span>
+            </div>
+            
+            <!--=====================HERRAMIENTAS=====================-->
+            <div id="tools" class="col">
+                <div class="contenedor herramientas">
+                    <h3>Mis herramientas: </h3>
+                    <div class="herramienta">
+                        <img src="img/html-logo.png" width=100 height=100 alt="logo html">
+                        <div class="skillname">
+                            <p>HTML</p>
+                        </div>
+                    </div>
+                    <div class="herramienta">
+                        <img src="img/css-logo.png" width=100 height=100 alt="logo css">
+                        <div class="skillname">
+                            <p>CSS</p>
+                        </div>
+                    </div>
+                    <div class="herramienta">
+                        <img src="img/bootstrap-logo.png" width=100 height=100 alt="logo bootstrap">
+                        <div class="skillname">
+                            <p>BOOTSTRAP</p>
+                        </div>
+                    </div>
+                    <div class="herramienta">
+                        <img src="img/git-logo.png" width=100 height=100 alt="logo git">
+                        <div class="skillname">
+                            <p>GIT</p>
+                        </div>
+                    </div>
+                    <div class="herramienta">
+                        <img src="img/github-logo.png" width=100 height=100 alt="logo github">
+                        <div class="skillname">
+                            <p>GITHUB</p>
+                        </div>
+                    </div> 
                 </div>
             </div>
-        <footer class="container-fluid">
+
+        </div>
+    </div>
+    
+    <!--=====================PROYECTOS=====================-->
+    <div class="container">
+        <div id="Proyectos" class="row text-center">
+            <h2>Proyectos: </h2> 
+        </div>
+    </div>
+
+    <!--=====================FOOTER=====================-->
+    <footer>
+        <div class="container">
             <div id="contact" class="row text-center">
                 <h2>Contacto</h2>
                 <div class="col-3">
@@ -136,15 +151,17 @@
                 </div>
             </div> 
         </div>
-        </footer>
-        <div class="subfooter">
-            <p>Copyright © 2022. @spuk0</p>
-            <p>All Rights Reserved</p>
-        </div> 
-        </div>
+    </footer>
 
-        <!--Scripts-->
+    <!--=====================DERECHOS=====================-->
+    <div class="subfooter">
+        <p>Copyright © 2022. @spuk0</p>
+        <p>All Rights Reserved</p>
+    </div>
 
-        <script type="text/javascript" src="js/MyScript.js"></script>
-    </body>
+</div>
+    <!--=====================SCRIPTS=====================-->
+    <script type="text/javascript" src="js/MyScript.js"></script>
+
+</body>
 </html>
