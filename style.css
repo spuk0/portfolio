@@ -5,8 +5,8 @@
 }
 
 html {
-    font-family: "Georgia";
     scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 :root { /*Variables globales que uso para colores favoritos*/
@@ -17,12 +17,23 @@ html {
 /*=====================NAVBAR=====================*/
 
 .nav-link{
-    font-family: Poppins !important;
     font-size: 20px;
+    font-family: 'Poppins', sans-serif !important;
+    color: #DDD !important;
+}
+
+.nav-link:hover{
+    color: var(--hlOrange) !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 
 .fixed-theme { /*Transicion que use para MyScript*/
     transition: 1s;
+}
+
+.container-fluid { 
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 /*=====================FONDO-BANNER=====================*/
@@ -64,7 +75,6 @@ html {
 .portadaFotoDetalle span{
     color:#a1a1a1;
     font-size: 25px;
-    font-family: Poppins;
     line-height: 25px;
 }
 /*Foto*/
