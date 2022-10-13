@@ -80,6 +80,10 @@ html {
     text-align: justify;
 }
 
+figcaption {
+    color: var(--hlGrey) !important;
+}
+
 /*=====================PROYECTOS=====================*/
 
 /* CSS 
@@ -127,38 +131,58 @@ html {
   color: var(--hlGrey);
 }
 
-.btn-propio {
-    font-family:Georgia;
-    padding: 0.6rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    border-radius: 17%;
-    border: 1px solid var(--hlGrey);
-    background-color: var(--hlGrey);
-    color: var(--hlOrange);
-    cursor: pointer;
-    text-decoration: none;
+/*=====================CONTACTO=====================*/
+
+.imgContacto{
+	width: 73%;
+	height: 80%;
 }
 
-.btn-propio:hover{
+.form-group label{
+	font-size: 11px;
+	font-weight: bold;
+	padding-left: 5px;
+	color: #828282;
+}
+.form-control{
+	border: none; /*1px solid #f4f4f4;*/
+	border-radius: 20px;
+	background: rgba(165, 147, 69, 0.075);/*#f4f4f4;*/
+	box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.form-control:focus {
+    color: #495057;
+    border-color: #fff !important;
+    outline: 0;
+    box-shadow: 0 1px 1px 1px var(--hlOrange) !important;
+}
+
+/*=====================FOOTER=====================*/
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-instagram:hover,.fa-linkedin:hover, .fa-github:hover {
+    color: var(--hlOrange);
+}
+.fab {
     color: var(--hlGrey);
-    border: 1px solid var(--hlOrange);
-    background-color: var(--hlOrange);
-    transition: 0.5s;
+}
+/* footer styling */
+#footer {
+    text-align: center;
+}
+
+.derechos {
+    margin-bottom: -15.1px;
 }
 
 /*=====================OTROS=====================*/
-
-
 h2 {
     font-size: 50px !important;
     color: var(--hlOrange);
-}
-
-/*Derechos de autor y etc*/
-.subfooter {
-    text-align: center;
-    font-size: 10px;
 }
 
 /*=====================MEDIA-QUERIES=====================*/
@@ -170,6 +194,11 @@ h2 {
         margin-top: 20px;
         margin-bottom: 10px;
         border-radius: 100%;
+    }
+
+    .imgContacto{
+        width: 80%;
+        height: 90%;
     }
 }
 
@@ -183,6 +212,11 @@ h2 {
         border-radius: 100%;
     }
 
+    .imgContacto{
+        width: 68%;
+        height: 75%;
+    }
+
 }
 
 /*Tablets*/
@@ -193,6 +227,11 @@ h2 {
         margin-top: 20px;
         margin-bottom: 10px;
         border-radius: 100%;
+    }
+
+    .imgContacto{
+        width: 65%;
+        height: 55%;
     }
 }
 
