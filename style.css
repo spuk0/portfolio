@@ -1,17 +1,17 @@
 * {
-    font-family: "Poppins";
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 html {
+    font-family: "Georgia";
     scroll-behavior: smooth;
 }
 
 :root { /*Variables globales que uso para colores favoritos*/
-    --hlgris: #fb7e14;
-    --hlgrey: #292929;
+    --hlOrange: #fb7e14;
+    --hlGrey: #292929;
 }
 
 /*=====================NAVBAR=====================*/
@@ -75,36 +75,90 @@ html {
 
 /*=====================SOBRE-MI=====================*/
 
-#Sobre-Mi {
-    margin-top: 10vh;
-}
-
 .textoSobreMi {
     line-height: 30px;
     text-align: justify;
 }
 
+/*=====================PROYECTOS=====================*/
+
+/* CSS 
+<!-- HTML !-->
+<button class="button-5" role="button">Button 5</button>
+*/
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: var(--hlGrey);
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: var(--hlOrange);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-5:hover,
+.button-5:focus{
+  background-color: var(--hlOrange);
+  color: var(--hlGrey);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+  color: var(--hlGrey);
+}
+
+.btn-propio {
+    font-family:Georgia;
+    padding: 0.6rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border-radius: 17%;
+    border: 1px solid var(--hlGrey);
+    background-color: var(--hlGrey);
+    color: var(--hlOrange);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-propio:hover{
+    color: var(--hlGrey);
+    border: 1px solid var(--hlOrange);
+    background-color: var(--hlOrange);
+    transition: 0.5s;
+}
+
 /*=====================OTROS=====================*/
 
-#Proyectos {
-    margin-bottom: 120px;
-}
 
 h2 {
     font-size: 50px !important;
-    color: var(--hlgris);
+    color: var(--hlOrange);
 }
-
-#contact h2{
-    margin-bottom: 70px;
-}
-
 
 /*Derechos de autor y etc*/
 .subfooter {
     text-align: center;
     font-size: 10px;
-    margin-top: 120px;
 }
 
 /*=====================MEDIA-QUERIES=====================*/
