@@ -8,11 +8,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Alkatra', cursive;
 }
 
 html {
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif !important;
 }
 
 :root { /*Variables globales que uso para colores favoritos*/
@@ -29,7 +29,6 @@ html {
 
 .nav-link{
     font-size: 1.4em !important;
-    font-family: 'Poppins', sans-serif !important;
     color: #DDD !important;
 }
 
@@ -85,7 +84,7 @@ html {
 
 .resaltador {
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 500;
     color: var(--hlOrange);
 }
 /*Foto*/
@@ -129,6 +128,18 @@ figcaption {
   color: var(--hlGrey);
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
   transform: translateY(-1px);
+}
+
+
+.card {
+    min-height: 600px;
+    max-height: 900px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 /*=====================CONTACTO=====================*/

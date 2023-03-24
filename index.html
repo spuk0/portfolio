@@ -8,7 +8,7 @@
         <script src="https://kit.fontawesome.com/6e0a9bac26.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
         <title>Spuk0: Portfolio</title>
 </head>
 
@@ -55,22 +55,25 @@
     <!--=====================SOBRE-MI=====================-->
     <div class="container mt-4 pt-4">
 
-        <div id="Sobre-Mi" class="row  justify-content-between mt-4">
+        <div id="Sobre-Mi" class="row justify-content-between mt-4">
 
             <h2>Sobre mi</h2>
             <!--=====================TEXTO=====================-->
             <div id="im" class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mt-4">
                 <span class="textoSobreMi">
-                    <h3>Programador web y futuro licenciado en sistemas.</h3>
+                    <h3>Futuro licenciado en sistemas.</h3>
                     <span>
-                        <p>Con optimismo y esfuerzo expando mis conocimientos hasta lograr dedicarme a esto.</p>
-                        <p>La universidad no solo enseña los fundamentos y la logica de diferentes paradigmas de programacion, 
-                            tambien demuestra la importancia de ser autodidacta. Gracias a esto, descubri que me encanta
-                            la programacion tanto como aprender por mi cuenta.
+                        <p>Nací en Formosa, Argentina. Actualmente resido en Corrientes capital. </p>
+                        <p>Me anoté a la universidad, y fue allí donde empece a fortalecer, significativamente, mi vocación por la informática. 
+                            Entendí la importancia del autoaprendizaje, nos enseñaron a aprender, analizar, a pensar diferente, y ver el mundo
+                            con ojos de informático.
+                            Desde entonces no he parado de formarme. Pues sin duda alguna ésto es lo que me apasiona.
                         </p>
+                        <!-- 
                         <div class="text-center">
                             <a href="#" class="button-5 px-5">Descargar CV</a>
                         </div>
+                        -->
                     </span>
                 </span>
             </div>
@@ -84,12 +87,6 @@
                             <img src="./assets/img/html-logo.png" class="figure-img img-fluid rounded"  alt="logo html">
                             <figcaption class="figure-caption">HTML</figcaption>
                         </figure>
-                        <!--
-                        <img src="img/html-logo.png"  alt="logo html">
-                        <div class="skillname">
-                            <p>HTML</p>
-                        </div>
-                        -->
                     </div>
 
                     <div class="herramienta col-4">
@@ -130,12 +127,22 @@
             <div class="row">
                 <div class="col-lg-4 mt-4">
                     <div class="card">
-                        <img class="card-img-top" src="./assets/img/InProgress.jpg" alt="Card image" style="width:100%">
+                        <img class="card-img-top" src="./assets/projects/amazing-events.png" alt="Card image" style="width:100%">
                         <div class="card-body">
-                            <h4 class="card-title">Project1</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <h4 class="card-title">Amazing Events</h4>
+                            <p class="card-text">Es una página que muestra diferentes eventos, 
+                                cuyos datos son brindados por una API.
+                            </p>
+                            <p>Las cards de los eventos son 
+                                insertadas con javascript, los filtros (texto y checkbox) funcionan
+                                solos o combinados.
+                            </p>
+                            <p>En la seccion stats, tenemos tablas. Usando los datos de la API formamos un top 3
+                                con los eventos segun su porcentaje de asistencia.
+                                Luego, vemos los ingresos ganados, y los estimados (para eventos futuros) de cada categoria.
+                            </p>
                             <div class="text-center">
-                                <a href="#" class="button-5">Link</a>
+                                <a href="https://spuk0.github.io/amazing-events-Frias/" class="button-5" target="_blank">Link</a>
                             </div>
                         </div>
                     </div>
@@ -143,7 +150,7 @@
 
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
-                        <img class="card-img-top" src="./assets/img/InProgress.jpg" alt="Card image" style="width:100%">
+                        <img class="card-img-top" src="./assets/projects/in-progress.png" alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Project2</h4>
                             <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -156,15 +163,14 @@
             </div>
     </section>
 
-     <!--=====================CONTACTO=====================-->
-    <section id="Contacto">
+     <!--=====================CONTACTO=====================
+        <section id="Contacto">
         <div class="container contacto mt-4">
             <h2>Contacto</h2>
             <div class="row my-2 mx-2 mt-4">
 			<div class="col-md-6">
 			    <img class="imgContacto" src="./assets/img/contact.png" alt="img-decorativa-contacto">	
 		    </div>
-        <!--col-->
 			<div class="col-md-6 mt-4">
                 <h3>Escribime</h3>
 						<p class="justify text-muted">¿Tenés alguna consulta?. ¿Te gustaría dejar tu opinión?. Podés rellenar el siguiente formulario para ponerte en contacto conmigo.</p>
@@ -193,10 +199,11 @@
   					</form>
 						
 			</div>
-            <!--col-->
-		</div><!--row-->
+		</div>
         </div>
     </section>
+    -->
+    
 
 </div>
 <!--=====================FOOTER=====================-->
