@@ -45,7 +45,7 @@ html {
 /*=====================FONDO-BANNER=====================*/
 /*Solo lo usare como banner*/
 .portadaFotoDetalle {
-    background-image: url(img/lenguaje-de-programación.jpg);
+    background-image: url(../assets/img/lenguaje-de-programación.jpg);
     min-height: 100vh; /*Para que ocupe todo el alto de la pantalla*/
     background-size: cover; /*Para que cubra todo*/
 }
