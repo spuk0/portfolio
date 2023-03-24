@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 <head>
         <meta charset="utf-8">
@@ -10,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-        <title>jabfry: Portfolio</title>
+        <title>Spuk0: Portfolio</title>
 </head>
 
 <body>
@@ -19,19 +18,17 @@
 <header class="header">
     <!--=====================BARRA DE NAVEGACION=====================-->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top myNavBar" id="MyNavBar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <span>
-                    <img src="./assets/img/AP-logo.png" width="40" height="30" alt="Logo de argentina programa" align="left" style="margin-right: 10px;">
-                </span>
-            </a>
+        <div class="container-fluid navbar-container">
+            <span class="navbar-brand">
+                <a href="#"><img src="./assets/img/AP-logo.png" alt="Logo de argentina programa"></a>
+            </span>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
                     data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#Sobre-Mi">Sobre mi</a></li>
                     <li class="nav-item"><a class="nav-link" href="#Proyectos">Proyectos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#Contacto">Contacto</a></li>
@@ -41,17 +38,13 @@
     </nav>
 
     <!--=====================BANNER, FOTO Y DESCRIPCION=====================-->
-    <div id="portada" class="portadaFotoDetalle container-fluid bgimage">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mainBanner">
-                <div class="bloque-portadaYDescripcion">
-                    <img class="fotoPortada" src="./assets/img/Yo2.jpg" alt="Foto de perfil">
-                    <span>
-                        <p>Javier Antonio Frias</p>
-                        <p>Software developer</p>
-                    </span>
-                </div>
-            </div>
+    <div id="portada" class="banner">
+        <div class="banner-content container-fluid">
+            <img class="fotoPortada" src="./assets/img/user.jpg" alt="Foto de perfil">
+            <span>
+                <p class="resaltador">Javier Antonio Frias</p>
+                <p>Software developer</p>
+            </span>
         </div>
     </div> 
 </header>

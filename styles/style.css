@@ -22,35 +22,37 @@ html {
 
 /*=====================NAVBAR=====================*/
 
+.navbar-brand img{
+    width:40px; 
+    height:30px;
+}
+
 .nav-link{
-    font-size: 20px;
+    font-size: 1.4em !important;
     font-family: 'Poppins', sans-serif !important;
     color: #DDD !important;
 }
 
 .nav-link:hover{
     color: var(--hlOrange) !important;
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 
-.fixed-theme { /*Transicion que use para MyScript*/
+.header .myNavBar { /*Navbar transparente, el !importante porq uso bootstrap*/
+    background-color: transparent !important;
+}
+
+.fixed-theme { /*Transicion del script scroll*/
     transition: 1s;
 }
-
-.container-fluid { 
-    scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif !important;
-}
-
-/*=====================FONDO-BANNER=====================*/
-/*Solo lo usare como banner*/
-.portadaFotoDetalle {
+/*=====================BANNER=====================*/
+/*====FOTO====*/
+.banner {
     background-image: url(../assets/img/lenguaje-de-programación.jpg);
     min-height: 100vh; /*Para que ocupe todo el alto de la pantalla*/
     background-size: cover; /*Para que cubra todo*/
 }
 /*Esto es para oscurecer el background, el :before es para aplicar lo que quiera antes del .header*/
-.portadaFotoDetalle:before {
+.banner:before {
 	content:'';
 	position: absolute;
     top: 0;
@@ -58,34 +60,36 @@ html {
 	left: 0;
 	right: 0;
     min-height: 100vh;
-	background-color: rgba(0,0,0,0.6);
+	background-color: rgba(0,0,0,0.4);
 }
-
-.header .myNavBar { /*Navbar transparente, el !importante porq uso bootstrap*/
-    background-color: transparent !important;
-}
-
 
 /*Edit de la foto de portada y detalle en el header*/
 /*Box*/
 
-.mainBanner {
-    text-align: center;
+.banner-content {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    text-align: center;
+    top: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
 }
 
 /*Texto del header*/
-.portadaFotoDetalle span{
+.banner span{
     color:#a1a1a1;
     font-size: 25px;
     line-height: 25px;
 }
+
+.resaltador {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--hlOrange);
+}
 /*Foto*/
 .fotoPortada {
-    margin-bottom: 10px;
     border-radius: 100%;
 }
 
@@ -107,44 +111,24 @@ figcaption {
 <button class="button-5" role="button">Button 5</button>
 */
 .button-5 {
-  align-items: center;
   background-clip: padding-box;
   background-color: var(--hlGrey);
-  border: 1px solid transparent;
   border-radius: .25rem;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  box-sizing: border-box;
   color: var(--hlOrange);
-  cursor: pointer;
-  display: inline-flex;
-  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   font-weight: 600;
-  justify-content: center;
   line-height: 1.25;
-  margin: 0;
-  min-height: 3rem;
   padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-  position: relative;
   text-decoration: none;
   transition: all 250ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
   width: auto;
 }
 
-.button-5:hover,
-.button-5:focus{
+.button-5:hover{
   background-color: var(--hlOrange);
   color: var(--hlGrey);
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-}
-
-.button-5:hover {
   transform: translateY(-1px);
-  color: var(--hlGrey);
 }
 
 /*=====================CONTACTO=====================*/
@@ -207,9 +191,6 @@ h2 {
     .fotoPortada {
         width: 34vh;
         height: 34vh;
-        margin-top: 20px;
-        margin-bottom: 10px;
-        border-radius: 100%;
     }
 
     .imgContacto{
@@ -221,13 +202,14 @@ h2 {
 /*Celus pequenios*/
 @media (min-width: 576px) and (max-width: 767px){
     .fotoPortada {
-        width: 65vh;
-        height: 65vh;
-        margin-top: 20px;
-        margin-bottom: 10px;
+        width: 40vh;
+        height: 40vh;
         border-radius: 100%;
     }
-
+    .banner-content {
+        top: 30%;
+    }
+    
     .imgContacto{
         width: 68%;
         height: 75%;
