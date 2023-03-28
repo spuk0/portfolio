@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Alkatra', cursive;
+    font-family: 'Assistant', sans-serif;
 }
 
 html {
@@ -16,12 +16,27 @@ html {
 }
 
 :root { /*Variables globales que uso para colores favoritos*/
-    --hlOrange: #fb7e14;
+    --hlOrange: #fb7f13;
     --hlGrey: #292929;
+    --tequila: #ffe7c7;
+    --new: #f1cfac;
+    --turquesa: #008083;
+}
+
+/*=====================GENERALES=====================*/
+h2 {
+    font-size: 50px !important;
+    color: var(--hlOrange);
+}
+
+body {
+    background-color: seashell !important;
 }
 
 /*=====================NAVBAR=====================*/
-
+#MyNavBar{
+    max-height: 50px;
+}
 .navbar-brand img{
     width:40px; 
     height:30px;
@@ -49,6 +64,7 @@ html {
     background-image: url("../assets/img/lenguaje-de-programación.jpg");
     min-height: 100vh; /*Para que ocupe todo el alto de la pantalla*/
     background-size: cover; /*Para que cubra todo*/
+    background-attachment: fixed;
 }
 /*Esto es para oscurecer el background, el :before es para aplicar lo que quiera antes del .header*/
 .banner:before {
@@ -94,13 +110,38 @@ html {
 
 /*=====================SOBRE-MI=====================*/
 
+
+.sobre-mi-container{
+    min-height: 100vh;
+}
+
 .textoSobreMi {
-    line-height: 30px;
-    text-align: justify;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.textoSobreMi h3, .herramientas h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--turquesa);
 }
 
 figcaption {
     color: var(--hlGrey) !important;
+    font-weight: bold;
+}
+
+.figure-img {
+    color: var(--hlGrey);
+    font-size: 120px;
+    transition: all 0.2s ease-in-out;
+}
+
+.figure-img:hover {
+    -webkit-transform:scale(1);
+    transform:scale(1.1);
+    color: var(--turquesa);
 }
 
 /*=====================PROYECTOS=====================*/
@@ -175,7 +216,7 @@ figcaption {
     font-size: 36px;
     cursor: pointer;
 }
-.fa-instagram:hover,.fa-linkedin:hover, .fa-github:hover {
+.figure-footer:hover {
     color: var(--hlOrange);
 }
 .fab {
@@ -188,12 +229,6 @@ figcaption {
 
 .derechos {
     margin-bottom: -15.1px;
-}
-
-/*=====================OTROS=====================*/
-h2 {
-    font-size: 50px !important;
-    color: var(--hlOrange);
 }
 
 /*=====================MEDIA-QUERIES=====================*/
